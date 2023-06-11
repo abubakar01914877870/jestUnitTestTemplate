@@ -10,3 +10,7 @@ module.exports.fizzbuzz = (number) => {
     else if(number % 5 === 0) return 'buzz';
     else return number;
 };
+
+module.exports.getCurrency = () => {
+    return ['USD', 'BDT', 'AUD'];
+};

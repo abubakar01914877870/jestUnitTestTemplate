@@ -1,4 +1,4 @@
-const { absolute, fizzbuzz } = require('../../src/lib/lib');
+const { absolute, fizzbuzz, getCurrency } = require('../../src/lib/lib');
 
 describe('Absolute: ', () =>{
     it('Should return positive if number is positive', () => {
@@ -15,7 +15,7 @@ describe('Absolute: ', () =>{
     });
 });
 
-describe('fizzbuzz', () => {
+describe('fizzbuzz: ', () => {
   it('should return "fizz" for numbers divisible by 3', () => {
     expect(fizzbuzz(3)).toBe('fizz');
     expect(fizzbuzz(6)).toBe('fizz');
@@ -38,5 +38,12 @@ describe('fizzbuzz', () => {
     expect(fizzbuzz(7)).toBe(7);
     expect(fizzbuzz(14)).toBe(14);
     expect(fizzbuzz(22)).toBe(22);
+  });
+});
+
+describe('Test Array: ', () => {
+  it('Check currency list', () => {
+    const result = getCurrency();
+    expect(result).toEqual(expect.arrayContaining(['BDT', 'USD', 'AUD']));
   });
 });
