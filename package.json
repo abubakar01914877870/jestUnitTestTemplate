@@ -1,0 +1,22 @@
+{
+  "name": "jestunittesttemplate",
+  "version": "1.0.0",
+  "description": "Unit test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abubakar01914877870/jestUnitTestTemplate.git"
+  },
+  "author": "Abu bakar siddique (abubakar01914877870@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abubakar01914877870/jestUnitTestTemplate/issues"
+  },
+  "homepage": "https://github.com/abubakar01914877870/jestUnitTestTemplate#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}
