@@ -1,4 +1,4 @@
-const { absolute } = require('../../src/lib/lib');
+const { absolute, fizzbuzz } = require('../../src/lib/lib');
 
 describe('Absolute: ', () =>{
     it('Should return positive if number is positive', () => {
@@ -13,4 +13,30 @@ describe('Absolute: ', () =>{
         const result = absolute(1);
         expect(result).toBe(1);
     });
+});
+
+describe('fizzbuzz', () => {
+  it('should return "fizz" for numbers divisible by 3', () => {
+    expect(fizzbuzz(3)).toBe('fizz');
+    expect(fizzbuzz(6)).toBe('fizz');
+    expect(fizzbuzz(9)).toBe('fizz');
+  });
+
+  it('should return "buzz" for numbers divisible by 5', () => {
+    expect(fizzbuzz(5)).toBe('buzz');
+    expect(fizzbuzz(10)).toBe('buzz');
+    expect(fizzbuzz(20)).toBe('buzz');
+  });
+
+  it('should return "fizzbuzz" for numbers divisible by both 3 and 5', () => {
+    expect(fizzbuzz(15)).toBe('fizzbuzz');
+    expect(fizzbuzz(30)).toBe('fizzbuzz');
+    expect(fizzbuzz(45)).toBe('fizzbuzz');
+  });
+
+  it('should return the number itself for other numbers', () => {
+    expect(fizzbuzz(7)).toBe(7);
+    expect(fizzbuzz(14)).toBe(14);
+    expect(fizzbuzz(22)).toBe(22);
+  });
 });
