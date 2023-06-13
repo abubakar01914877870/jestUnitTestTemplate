@@ -4,7 +4,8 @@
   "description": "Unit test project",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,11 @@
   },
   "homepage": "https://github.com/abubakar01914877870/jestUnitTestTemplate#readme",
   "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1",
     "jest": "^29.5.0"
   }
 }

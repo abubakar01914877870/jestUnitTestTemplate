@@ -1,4 +1,4 @@
-module.exports.absolute = (number) => {
+ module.exports.absolute = (number) => {
     if(number > 0) return number;
     if(number < 0) return -number;
     return 0;
@@ -13,4 +13,12 @@ module.exports.fizzbuzz = (number) => {
 
 module.exports.getCurrency = () => {
     return ['USD', 'BDT', 'AUD'];
+};
+
+module.exports.getAge = () => {
+    return Math.floor( 18 + Math.random() * 20);
+}
+
+module.exports.getString = () => {
+    return "TEST String";
 };
