@@ -47,8 +47,8 @@ describe('Numbers: ', () => {
     expect(result).toBe(1);
   });
   it("Should return 0 if number is 0", () => {
-    const result = absolute(1);
-    expect(result).toBe(1);
+    const result = absolute(0);
+    expect(result).toBe(0);
   });
   it('Check number should greater then or equal to 18', () => {
     expect(getAge()).toBeGreaterThanOrEqual(18);
